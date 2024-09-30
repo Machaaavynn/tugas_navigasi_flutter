@@ -112,12 +112,12 @@ class Category extends StatelessWidget {
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-              children: [
-                ...genreTiles.map((tile) => Padding(
-                      padding: const EdgeInsets.only(right: 16.0),
-                      child: tile,
-                    )),
-              ],
+              children: genreTiles.map((tile) {
+                return Padding(
+                  padding: const EdgeInsets.only(right: 16.0),
+                  child: tile,
+                );
+              }).toList(),
             ),
           ),
         ),
