@@ -1,0 +1,64 @@
+name: navigasi_buttom
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  shared_preferences: ^2.0.9
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  assets:
+    - assets/agaklaen.jpg
+    - assets/avengers.jpg
+    - assets/cocomelon.jpg
+    - assets/deathwhisperer.jpg
+    - assets/desapenari.jpg
+    - assets/getout.jpg
+    - assets/grizzy.jpg
+    - assets/mashabear.jpg
+    - assets/memories.jpg
+    - assets/menjelangajal.jpg
+    - assets/minions.jpg
+    - assets/searching.jpg
+    - assets/shaitaan.jpg
+    - assets/siksakubur.jpg
+    - assets/spiderman.jpg
+    - assets/spongbob.jpg
+    - assets/thedavinci.jpg
+    - assets/thegodfather.jpg
+    - assets/theshawshnk.jpg
+    - assets/toystory.jpg
+    - assets/us.jpg
+    - assets/empresski.jpg
+    - assets/lostyouforever.jpg
+    - assets/thedoble.jpg
+    - assets/theroyal.jpg
+    - assets/whorules.jpg
+    - assets/victoria.jpg
+    - assets/figher.jpg
+    - assets/outlawking.jpg
+    - assets/sisu.jpg
+    - assets/theeangle.jpg
+    - assets/thegun.jpg
+    - assets/theking.jpg
+    - assets/brill.jpeg
+    - assets/ancika.jpg
+    - assets/duahati.jpg
+    - assets/gitfed.jpg
+    - assets/leave.jpg
+    - assets/nowhere.jpg
+    - assets/pulang.jpg
+  uses-material-design: true
