@@ -1,7 +1,9 @@
+// login_page.dart
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:navigasi_buttom/widgets/mytext_field.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
@@ -61,48 +63,21 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextField(
+              MyTextField(
                 controller: usernameController,
-                style: TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  labelText: 'Username',
-                  labelStyle: TextStyle(color: Colors.white),
-                  filled: true,
-                  fillColor: Colors.grey[600],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
+                label: 'Username',
               ),
               SizedBox(height: 15),
-              TextField(
+              MyTextField(
                 controller: passwordController,
-                obscureText: !isPasswordVisible,
-                style: TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  labelStyle: TextStyle(color: Colors.white),
-                  filled: true,
-                  fillColor: Colors.grey[600],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide.none,
-                  ),
-                  suffixIcon: IconButton(
-                    icon: Icon(
-                      isPasswordVisible
-                          ? Icons.visibility
-                          : Icons.visibility_off,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        isPasswordVisible = !isPasswordVisible;
-                      });
-                    },
-                  ),
-                ),
+                label: 'Password',
+                isPassword: true,
+                isPasswordVisible: isPasswordVisible,
+                onSuffixIconPressed: () {
+                  setState(() {
+                    isPasswordVisible = !isPasswordVisible;
+                  });
+                },
               ),
               SizedBox(height: 20),
               ElevatedButton(
