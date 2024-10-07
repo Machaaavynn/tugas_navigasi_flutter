@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:navigasi_buttom/widgets/category/custom_app_bar.dart';
+import 'package:navigasi_buttom/widgets/category/Search.dart';
 import 'package:navigasi_buttom/widgets/home/movie_list.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -36,7 +36,7 @@ class MyHomePage extends StatelessWidget {
   List<Map<String, dynamic>> _getMovies() {
     return [
       {
-        'title': 'THE GODFATHER (1970)',
+        'title': 'THE GODFATHER (1972)',
         'rating': 9.2,
         'imagePath': 'assets/thegodfather.jpg',
       },

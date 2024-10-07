@@ -2,12 +2,19 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:navigasi_buttom/model/model_profile.dart';
 import 'package:navigasi_buttom/widgets/login_page.dart';
 import 'package:navigasi_buttom/widgets/profile/custom_button.dart';
 import 'package:navigasi_buttom/widgets/profile/custom_card.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Profile extends StatelessWidget {
+  final ProfileModel profile = ProfileModel(
+    name: 'Brillian Suhargo',
+    role: 'Pemprograman IT',
+    imagePath: 'assets/brill.jpeg',
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,11 +32,11 @@ class Profile extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 50,
-                  backgroundImage: AssetImage('assets/brill.jpeg'),
+                  backgroundImage: AssetImage(profile.imagePath),
                 ),
                 SizedBox(height: 16),
                 Text(
-                  'Gorge Alexander Louis',
+                  profile.name,
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -38,7 +45,7 @@ class Profile extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 Text(
-                  'Pemprograman IT',
+                  profile.role,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white,

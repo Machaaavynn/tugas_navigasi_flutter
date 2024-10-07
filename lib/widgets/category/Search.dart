@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:navigasi_buttom/widgets/category/customsearch.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -9,15 +8,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: Colors.black,
       elevation: 0,
-      leading: IconButton(
-        icon: Icon(Icons.search, color: Colors.white),
-        onPressed: () {
-          showSearch(
-            context: context,
-            delegate: CustomSearchDelegate(),
-          );
-        },
-      ),
+      automaticallyImplyLeading: false,
       title: Container(
         height: 40,
         child: TextField(
