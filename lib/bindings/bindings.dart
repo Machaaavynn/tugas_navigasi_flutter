@@ -5,8 +5,5 @@ class MyBindings extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut(() => DhasboardController());
-    //another bindigs
-    
   }
-
 }

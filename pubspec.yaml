@@ -61,4 +61,5 @@ flutter:
     - assets/leave.jpg
     - assets/nowhere.jpg
     - assets/pulang.jpg
+    - assets/logoapp.png
   uses-material-design: true
