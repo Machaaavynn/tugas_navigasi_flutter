@@ -36,7 +36,7 @@ class MyHomePage extends StatelessWidget {
   List<Map<String, dynamic>> _getMovies() {
     return [
       {
-        'title': 'THE GODFATHER (1972)',
+        'title': 'THE GODFATHER (1970)',
         'rating': 9.2,
         'imagePath': 'assets/thegodfather.jpg',
       },
